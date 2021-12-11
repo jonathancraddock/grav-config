@@ -1,0 +1,257 @@
+/* Use a handwritten font for blockquote text */
+@font-face {
+  font-family: quoteFont;
+  src: url(/kalam.ttf);
+}
+
+/* Pull-down menu on narrow display background colour */
+.overlay {
+  background: #cacaca;
+}
+
+/* Pull-down menu on narrow display text to white */
+.treemenu li a, .treemenu li a.active, .treemenu li a:focus, .treemenu li a:hover {
+  color: #3062a2 !important;
+  margin-bottom: 5px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+/* Pull-down menu on narrow display button style */
+.treemenu li {
+  margin: 1em 0 1em 0;
+  border-radius: .1em;
+  list-style: none;
+  background-color: #d2d9e3e6;
+  border: .05rem solid #0a0c0fe6;
+  box-shadow: 2px 2px 8px 0 rgba(68, 68, 68, 0.3);
+}
+
+/* Switch off the menu toggle as I don't need it for this config */
+.treemenu li.tree-empty > .toggler {
+  display: none;
+}
+
+/* Align bullet to centre of text 
+.treemenu .toggler {
+  padding-top: 3px;
+} */
+
+/* Pull-down menu on narrow display, not transparent */
+.overlay.open {
+  opacity: 1;
+}
+
+/* Default Links */
+a { color: #126bd9; }
+a:visited { color: #126bd9; }
+
+/* Reduce size of title text on search page */
+.search-header {
+  font-size: x-large;
+}
+
+/* Override 80% width and go full screen width */
+.search-wrapper .search-input {
+    width: 100%;
+}
+
+/* Simplify layout of 'items' in search results */
+.search-item {
+  margin-left: 0;
+  margin-bottom: 32px;
+}
+
+/* Tighten up margins on  blog cards */
+.blog-listing .bricklayer-column {
+  padding-right: 5px;
+  padding-left: 5px; }
+.blog-listing .card {
+  margin-bottom: 20px; }
+
+/* feint border on img, only in body of blog posts */
+.e-content > p > img {
+  border: #cecece solid 1px;
+  border-radius: 2px;
+}
+
+/* Grey background on blockquote */
+blockquote {
+  border-left: 0.3rem solid #dfdfdf;
+  margin-right: 0;
+  background-color: #e7e9ed80;
+  font-family: quoteFont;
+  font-size: large;
+}
+
+/* Increase size of (handwriting) blockquote text */
+blockquote p {
+  font-size: large;
+}
+
+/* Style the 'Wainwright' signature on Hiking blog posts */
+blockquote p img[src="/user/images/aw-sig.png"] {
+  display: flex;
+  margin-left: auto;
+  margin-top: -18px;
+  opacity: 0.75;
+}
+
+/* Edit side 'border' of success callout */
+.notices.green {
+  border-left: 0.3rem solid #5cb85c4a;
+}
+
+/* Slightly tighten heading spacing */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0.5rem;
+}
+
+.h2, h2 {
+  font-size: 1.5rem;
+}
+
+/* Used by 'links' on blog listing page, increase by .2rem */
+.h5, h5 {
+  font-size: 1.2rem;
+}
+
+/* Larger 'category' taxonomy tags */
+.taxonomyCats .tags .label {
+  background-color: #fff;
+  margin: 1px;
+  border-radius: .1rem;
+  font-weight: normal;
+  font-size: small;
+  border: .05rem solid #3085eee6;
+  color: #3085eee6;
+  text-align: center;
+  transition: background .2s,border .2s,box-shadow .2s,color .2s;
+  cursor: pointer;
+  height: 1.8rem;
+  font-size: .8rem;
+  line-height: 1.2rem;
+  display: inline-block;
+  padding-top: 0.15rem;
+}
+
+.taxonomyCats .tags .label:focus, .taxonomyCats .tags .label:hover {
+  text-decoration: none;
+  border-color: #227ded;
+  background: #e1edfd;
+}
+
+/* Blog 'clear filter' button for taxonomy filter */
+.btn.clearFilter {
+  margin-top: 6em;
+  margin-bottom: -6em;
+  z-index: -1;
+  position:relative;
+}
+
+/* Allow button to be displayed 'above' a Hero section */
+.btn, .button {
+    z-index: 1 !important;
+    position: relative !important;
+}
+
+/* Tighten spacing at bottom of Hero section */
+.hero {
+    padding-bottom: 6rem;
+    margin-bottom: -3rem;
+}
+
+/* Larger body font size */
+p {
+    font-size: medium;
+}
+
+/* Fade links in footer */
+#footer a, #footer a:visited, #footer a:focus, #footer a:hover {
+  color: #126bd99c;
+}
+
+/* Create a subtle horizontal rule */
+hr {
+  border: solid #e6e6e6;
+  border-width: 1px 0 0 0;
+  width: 85%;
+  margin-top: 1.2em;
+}
+
+/* Balance the text inside of a 'notices' panel */
+.notices {
+    padding: 0.1rem 0.5rem 0.1rem 1rem;
+}
+
+.notices p {
+    margin: 0.6rem 0;
+}
+
+/* Use <em> immediately after an image as a re-styled caption */
+p > img + em {
+    font-size: small;
+    margin-top: -.25em;
+    display: block;
+    text-align: center;
+    font-style: normal;
+    opacity: 0.8;
+}
+
+/* Faded green-grey background to code blocks */
+.hljs {
+    background: #E5F0DF69;
+    border-radius: 8px;
+}
+
+/* Faded green-grey and dark red for code snippets */
+code {
+    color: #800;
+    background: #f4f9f2;
+}
+
+
+table {
+    overflow-x: auto;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+
+table td, table th {
+    padding: .6rem .4rem;
+    border-bottom: .05rem solid #e7e9ed;
+    border-bottom-width: 0.05rem;
+}
+
+table th {
+    border: #0000001a;
+    border-style: solid;
+    border-width: 0 0 .2em 0;
+}
+
+tr > :first-child {
+    width: 33%;
+}
+
+/* ============= */
+/* MEDIA QUERIES */
+/* ============= */
+
+@media screen and (max-width: 576px) {
+
+  /* Show a reduced height map on mobile */
+  iframe {
+    height: 350px;
+    padding-right: 1em;
+  }
+
+  /* Smaller AW blockquote sig on mobile */
+  blockquote p img[src="/user/images/aw-sig.png"] {
+    width: 175px;
+    height: auto;
+  }
+}
