@@ -2,6 +2,10 @@
 
 Some configuration notes while experimenting with Grav.
 
+* Grav Official Site -> https://getgrav.org/
+* Learn Grav -> https://learn.getgrav.org/
+* Github -> https://github.com/getgrav/grav
+
 -----
 
 ### SimpleSearch Plugin
